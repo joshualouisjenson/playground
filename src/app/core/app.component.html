@@ -1,5 +1,5 @@
 <!-- Top page header -->
-<header class="w-100 p-3 centered border-bottom">
+<header class="w-100 p-3 centered border-bottom bg-primary text-white">
     <h1>
         {{title}}
     </h1>
@@ -7,18 +7,22 @@
 
 <div class="d-flex h-100">
     <!-- Left Navigation Sidebar -->
-    <aside class="p-3 mw-20% h-100 border-right">
+    <aside class="p-4 mw-20% border-right bg-white">
         <nav>
-            <ul>
-                <li *ngFor="let page of pages">
-                    <a [routerLink]="page.Route">{{page.Name}}</a>
-                </li>
+            <ul class="list-group">
+                <a
+                    *ngFor="let page of pages"
+                    class="list-group-item"
+                    [routerLink]="page.Route"
+                >
+                    {{page.Name}}
+                </a>
             </ul>
         </nav>
     </aside>
     
     <!-- Content -->
-    <main class="h-100 w-100">
+    <main class="flex-fill bg-white">
         <router-outlet></router-outlet>
     </main>
 </div>

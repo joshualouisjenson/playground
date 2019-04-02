@@ -1,16 +1,5 @@
-$soft-white: #FAFAFA;
-$content-background: #F2F2F2;
-
 :host {
     display: flex;
     flex-direction: column;
     height: 100%;
-
-    header, aside {
-        background-color: $soft-white;
-    }
-
-    main {
-        background-color: $content-background;
-    }
 }

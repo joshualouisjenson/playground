@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'jj-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @HostBinding('class') classes = 'flex-fill';
 
 }
