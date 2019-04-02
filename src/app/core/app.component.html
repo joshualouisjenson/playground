@@ -1,5 +1,24 @@
-<h1>
-    {{ title }}
-</h1>
-<h2>WIP, more will be here soon.</h2>
-<router-outlet></router-outlet>
+<!-- Top page header -->
+<header class="w-100 p-3 centered border-bottom">
+    <h1>
+        {{title}}
+    </h1>
+</header>
+
+<div class="d-flex h-100">
+    <!-- Left Navigation Sidebar -->
+    <aside class="p-3 mw-20% h-100 border-right">
+        <nav>
+            <ul>
+                <li *ngFor="let page of pages">
+                    <a [routerLink]="page.Route">{{page.Name}}</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- Content -->
+    <main class="h-100">
+        <router-outlet></router-outlet>
+    </main>
+</div>

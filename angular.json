@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "jj",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -27,7 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/bootstrap.min.css",
+              "src/styles/bootstrap-grid.min.css",
+              "src/styles/main.scss"
             ],
             "scripts": []
           },

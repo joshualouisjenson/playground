@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { AppRouterModule } from './router';
-import { HomeModule } from '../pages/home/home.module';
 
 @NgModule({
     declarations: [
@@ -13,10 +12,6 @@ import { HomeModule } from '../pages/home/home.module';
         CommonModule,
         BrowserModule,
         AppRouterModule,
-        HomeModule
-    ],
-    providers: [
-        
     ],
     bootstrap: [AppComponent]
 })
