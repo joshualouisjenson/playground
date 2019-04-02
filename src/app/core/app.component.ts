@@ -7,7 +7,7 @@ import { PageModel } from '../shared/models/page.model';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    title = 'Joshua\'s Playground';
+    title = 'Joshua Jenson';
 
     pages: PageModel[] = [
         new PageModel('/home', 'Home'),
