@@ -1,1 +1,40 @@
-WIP
+<article class="p-5 flex-fill bg-light">
+    <div class="d-block border rounded bg-white container">
+        <section class="resume-info">
+            <div class="row">
+                <div class="col resume-name">{{resume.Name}}</div>
+            </div>
+            <div class="row">
+                <div class="col resume-role">{{resume.Role}}</div>
+            </div>
+            <div class="row">
+                <div class="col resume-contact">{{resume.Email}}</div>
+                <div class="col resume-contact">{{resume.Phone}}</div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <aside>
+                SKILLS & ATTRIBUTES
+            </aside>
+            <div class="container">
+                <div *ngFor="let skill of skills" class="row">{{skill}}</div>
+            </div>
+        </section>
+
+        <section>
+            <aside>
+                EDUCATION
+            </aside>
+            <div class="container">
+            </div>
+        </section>
+        <section>
+            <aside>
+                EXPERIENCE
+            </aside>
+            <div class="container">
+            </div>
+        </section>
+    </div>
+</article>
